@@ -27,15 +27,20 @@ body {
 
 }
 
-.form-wrapper{
+.form-wrapper, .results-wrapper{
   width: 50%;
   height: auto;
   background: rgba(255, 255, 255, .7);
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   
+}
+
+.results-wrapper{
+  flex-direction: column;
 }
 
 .test-form{

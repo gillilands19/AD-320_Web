@@ -1,20 +1,34 @@
-<?php
+<!doctype html>
+<html lang="en">
+<head>
+    
+<meta charset="utf-8" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width" />
+<meta name="description" content="PHP Form" />
+<link rel="stylesheet" href="css/styles.css">
+    
+<title>Sean G.</title>
+</head>
 
-if(empty($_GET)) {
+<body>
 
-  include('show_form.php');
+  <div class="site-wrapper">
+  <?php
 
-} else {
-  
-  $name = strip_tags($_GET['name']);
-  $email = strip_tags($_GET['email']);
-  $phone = strip_tags($_GET['tel']);
-  $state = strip_tags($_GET['state']);
+      if(empty($_GET))
+        include('show_form.php');
 
-  echo '<p>' . $name . '</p>';
-  echo '<p>' . $email . '</p>';
-  echo '<p>' . $phone . '</p>';
-  echo '<p>' . $state . '</p>';
-}
+      else {
 
-?>
+        echo '<div class="results-wrapper">';
+        foreach($_GET as $key => $value){
+          echo '<p>' . ' ' . $key . ': ' . $value . ' ' . '</p>';
+        }
+        echo '</div>';
+      }
+
+
+  ?>
+  </div>
+</body>

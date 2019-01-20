@@ -4,6 +4,7 @@ function buildForm(){
 
   $form =
     '<div class="form-wrapper">
+    <div class="error-msg"></div>
     <form action="form_handler.php" method="get" class="test-form">
       <div class="input-wrapper">
         <label for="name">Name: </label>

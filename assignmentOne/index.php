@@ -14,9 +14,10 @@
 <body>
 
   <div class="site-wrapper">
-    <?php 
-      include('show_form.php');
+    <?php
+        include('show_form.php');
     ?>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
